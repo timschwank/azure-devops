@@ -1,4 +1,5 @@
 test:
-	echo "test"
+	python -m pytest -vv .
 install:
-	echo "install"
+	pip install --upgrade pip
+	pip install -r requirements.txt
