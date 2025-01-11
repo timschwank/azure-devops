@@ -20,5 +20,7 @@ jobs:
         python-version: 3.13.1
     - name: install deps
       run: make install
-    - name: Run make command
+    - name: Run make linter
       run: make lint
+    - name: Run make tests
+      run: make test
