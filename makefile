@@ -3,3 +3,5 @@ test:
 install:
 	pip install --upgrade pip
 	pip install -r requirements.txt
+hello:
+	echo "Hello"
