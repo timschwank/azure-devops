@@ -15,6 +15,10 @@ jobs:
     steps:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - uses: actions/checkout@v2
-
+    - uses: actions/setup-python@v5.3.0
+      with:
+        python-version: 3.5
+    - name: install deps
+      run: make install
     - name: Run make command
-      run: make hello
+      run: make lint
